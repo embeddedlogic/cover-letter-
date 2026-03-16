@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cover Letter Generator</title>
+    
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h1>Cover Letter Generator</h1>
+
+    <form action="/generate" method="POST">
+        <label for="name">Your Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="company">Company Name:</label><br>
+        <input type="text" id="company" name="company" required><br><br>
+
+        <label for="position">Job Title:</label><br>
+        <input type="text" id="position" name="position" required><br><br>
+
+        <label for="skills">Skills:</label><br>
+        <input type="text" id="skills" name="skills" required><br><br>
+
+        <label for="experience">Experience or Projects:</label><br>
+        <textarea id="experience" name="experience" rows="5" cols="40" required></textarea><br><br>
+
+        <button type="submit">Generate Cover Letter</button>
+    </form>
+</body>
+</html>
