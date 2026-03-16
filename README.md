@@ -14,7 +14,7 @@ A Flask web application that generates customizable cover letters.
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/cover-letter-generator.git
+git clone https://github.com/embeddedsystem/cover-letter-generator.git
 
 2. Go to the project folder
 
